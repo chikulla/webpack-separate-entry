@@ -2,6 +2,16 @@
 
 A tiny helper method for splitting the webpack entry point.
 
+## installation
+
+```
+yarn add -D webpack-separate-entry
+```
+
+```
+npm i -D webpack-separate-entry
+```
+
 ## usage
 
 Here is a src directory.
