@@ -1,6 +1,6 @@
 {
   "name": "webpack-separate-entry",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A tiny helper method for splitting the webpack entry point.",
   "main": "index.js",
   "scripts": {

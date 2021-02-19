@@ -24,7 +24,7 @@ function readDirRecursive(root, pattern, ignore) {
  * @param {RegExp} ignore patterns to ignore
  */
 function separateEntry(target, pattern, ignore) {
-  const root = path.resolve(__dirname, target);
+  const root = path.resolve(process.cwd(), target);
   const paths = readDirRecursive(root, pattern, ignore);
   const result = paths.reduce(function (acc, cur) {
     key = cur.replace(root + "/", "").replace(pattern, "");

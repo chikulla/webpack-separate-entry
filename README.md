@@ -25,7 +25,7 @@ const path = require("path");
 const separateEntries = require("webpack-separate-entry");
 module.exports = {
   // matches ts/tsx/js/jsx files but not .d.ts file
-  entry: separateEntries(path.resolve(__dirname, 'src'), /\.(tsx?|jsx?)$/, /\d\.ts$/),
+  entry: separateEntries('src', /\.(tsx?|jsx?)$/, /\d\.ts$/),
 
   ...
   output: {
