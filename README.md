@@ -27,15 +27,15 @@ src/
     └─ c.ts
 ```
 
-You can create multiple entry points with `separateEntries`.
+You can create multiple entry points with `separateEntry`.
 
 ```js
 // webpack.config.js
 const path = require("path");
-const separateEntries = require("webpack-separate-entry");
+const separateEntry = require("webpack-separate-entry");
 module.exports = {
   // matches ts/tsx/js/jsx files but not .d.ts file
-  entry: separateEntries('src', /\.(tsx?|jsx?)$/, /\d\.ts$/),
+  entry: separateEntry('src', /\.(tsx?|jsx?)$/, /\d\.ts$/),
 
   ...
   output: {
@@ -48,7 +48,7 @@ module.exports = {
 You'll get separated js bundles on `lib` directory which has the same structure of `src`.
 
 ```
-src/
+lib/
 ├─ a.js
 ├─ B.js
 ├─ x.js
